@@ -817,6 +817,7 @@ class ContinuousBinningTable2D(ContinuousBinningTable):
             if not isinstance(savefig, str):
                 raise TypeError("savefig must be a string path; got {}."
                                 .format(savefig))
+            plt.tight_layout()
             plt.savefig(savefig)
             plt.close()
 
